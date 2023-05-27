@@ -2,12 +2,13 @@
 
 //EJERCICIOS DE PHP PARA PRACTICAR
     
-/* 1. Write a function that returns the string "Hello, World!" */
-
-    function helloWorld(){
-        return "Hello, World!";
+/* 2.  Write a function that Reverse a string*/
+    $textorig = "Hello, World!";
+    function reverseString(string $text): string
+    {
+        $textrev = strrev($text);
+        return $textrev;
     };
 
-    echo helloWorld();
-
+    echo $textrev = reverseString($textorig);
 ?>
