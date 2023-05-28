@@ -2,13 +2,12 @@
 
 //EJERCICIOS DE PHP PARA PRACTICAR
     
-/* 2.  Write a function that Reverse a string*/
-    $textorig = "Hello, World!";
-    function reverseString(string $text): string
-    {
-        $textrev = strrev($text);
-        return $textrev;
-    };
+/* 3. Convert a resistor band's color to its numeric representation*/
+const COLORS = array("black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white");
 
-    echo $textrev = reverseString($textorig);
+function colorCode(string $color): int{
+    return array_search($color, COLORS);
+};
+
+echo colorCode("orange");
 ?>
